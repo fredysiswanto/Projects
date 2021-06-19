@@ -1,4 +1,9 @@
-const base_url = window.location.origin;
+const base_url = () => {
+  return window.location.host === 'http://127.0.0.1:5500/'
+    ? 'http://127.0.0.1:5500/'
+    : 'https://fredysiswanto.github.io/projects/';
+  // return data;
+};
 const dataListProjects = [
   {
     id: 1,
@@ -169,7 +174,7 @@ dataListProjects.forEach((project) => {
   <div class="col">
   <div class="card shadow-sm">
     <img
-      src="${base_url + project.img}"
+      src="${base_url() + project.img}"
       alt=""
       width="100%"
       height="225"/>
@@ -181,7 +186,7 @@ dataListProjects.forEach((project) => {
       <div class="d-flex justify-content-center align-items-center" >
         <div class="btn-group">
         <a href="${
-          base_url + project.url
+          base_url() + project.url
         }" class="btn btn-sm btn-primary" target='_blank'>view</a>
         </div>
       </div>
