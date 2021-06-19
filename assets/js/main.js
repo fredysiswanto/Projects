@@ -1,3 +1,4 @@
+const base_url = window.location.origin;
 const dataListProjects = [
   {
     id: 1,
@@ -179,7 +180,9 @@ dataListProjects.forEach((project) => {
       </p>
       <div class="d-flex justify-content-center align-items-center" >
         <div class="btn-group">
-        <a href="${project.url}" class="btn btn-sm btn-primary" target='_blank'>view</a>
+        <a href="${
+          base_url + project.url
+        }" class="btn btn-sm btn-primary" target='_blank'>view</a>
         </div>
       </div>
     </div>
@@ -188,8 +191,3 @@ dataListProjects.forEach((project) => {
   `;
 });
 listProjects.innerHTML = elems;
-
-const base_url = window.location.origin;
-const host = window.location.host;
-console.log(base_url, 'base');
-console.log(host, 'host');
