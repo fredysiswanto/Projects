@@ -180,9 +180,6 @@ dataListProjects.forEach((project) => {
       height="225"/>
     <div class="card-body">
       <h3>${project.title}</h3>
-      <p class="card-text">
-      ${project.description}
-      </p>
       <div class="d-flex justify-content-center align-items-center" >
         <div class="btn-group">
         <a href="${
