@@ -1,7 +1,7 @@
 const base_url = () => {
   return window.location.host === 'http://127.0.0.1:5500/'
     ? 'http://127.0.0.1:5500/'
-    : 'https://fredysiswanto.github.io/projects/';
+    : 'https://fredysiswanto.github.io/projects';
   // return data;
 };
 const dataListProjects = [
@@ -197,5 +197,5 @@ dataListProjects.forEach((project) => {
 });
 listProjects.innerHTML = elems;
 
-console.log(window.location.host);
-console.log(base_url(), 'base');
+// console.log(window.location.host);
+// console.log(base_url(), 'base');
