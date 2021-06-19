@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap");
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+body section {
+  border-bottom: 0.5px solid rgba(115, 115, 113, 0.305);
+}
+
+body footer {
+  border-top: 0.5px solid rgba(115, 115, 113, 0.305);
+}
+
+.container > .navbar-collapse {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+}
+
+p.lead {
+  padding-top: 15px;
+}
+
+p.lead u {
+  font-weight: bold;
+}
+/*# sourceMappingURL=mystyles.css.map */
