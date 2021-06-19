@@ -196,3 +196,6 @@ dataListProjects.forEach((project) => {
   `;
 });
 listProjects.innerHTML = elems;
+
+console.log(window.location.host);
+console.log(base_url(), 'base');
