@@ -169,7 +169,7 @@ dataListProjects.forEach((project) => {
   <div class="col">
   <div class="card shadow-sm">
     <img
-      src="${project.img}"
+      src="${base_url + project.img}"
       alt=""
       width="100%"
       height="225"/>
