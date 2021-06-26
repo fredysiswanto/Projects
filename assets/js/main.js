@@ -6,6 +6,14 @@ const base_url = () => {
 };
 const dataListProjects = [
   {
+    id: 0,
+    title: 'JavaScript-SpotifyAPI',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quos.',
+    url: '/src/Vanilla-JavaScript-SpotifyAPI',
+    img: '/src/Vanilla-JavaScript-SpotifyAPI/img.jpg',
+  },
+  {
     id: 1,
     title: 'breakout game',
     description:
