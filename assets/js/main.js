@@ -10,8 +10,8 @@ const dataListProjects = [
     title: 'JS-SpotifyAPI',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quos.',
-    url: '/src/Vanilla-JavaScript-SpotifyAPI',
-    img: '/src/Vanilla-JavaScript-SpotifyAPI/img.jpg',
+    url: '/src/JS-SpotifyAPI',
+    img: '/src/JS-SpotifyAPI/img.jpg',
   },
   {
     id: 1,
