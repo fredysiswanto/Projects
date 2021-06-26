@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.25fr 2fr 0.25fr;
+  grid-template-areas:
+    'header header header'
+    'main main main'
+    'footer footer footer';
+  gap: 0.5em;
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  background-color: whitesmoke;
+}
+
+header {
+  background-color: rgb(34, 87, 139);
+  grid-area: header;
+  padding: 10px;
+}
+nav {
+  background-color: salmon;
+  padding: 5f;
+}
+main {
+  background-color: sandybrown;
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 0.25fr 1fr;
+
+  gap: 1em;
+  padding: 10px;
+}
+.sidebar {
+  background-color: blueviolet;
+}
+.content {
+  background-color: darkolivegreen;
+}
+.content .content-box {
+  border: 2px solid whitesmoke;
+  height: 95%;
+  cursor: pointer;
+}
+footer {
+  grid-area: footer;
+  background-color: hotpink;
+  padding: 10px;
+}
+
+.content .content-box.flip {
+  -webkit-animation: flip-vertical-right 1s
+    cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  animation: flip-vertical-right 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: 1s;
+  background-color: indigo;
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+  .sidebar {
+    display: none;
+  }
+}
+
+@keyframes flip-vertical-right {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+}
