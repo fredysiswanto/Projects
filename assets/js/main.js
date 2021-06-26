@@ -7,7 +7,7 @@ const base_url = () => {
 const dataListProjects = [
   {
     id: 0,
-    title: 'JavaScript-SpotifyAPI',
+    title: 'JS-SpotifyAPI',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quos.',
     url: '/src/Vanilla-JavaScript-SpotifyAPI',
