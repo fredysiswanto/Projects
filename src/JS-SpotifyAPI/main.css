@@ -1,0 +1,54 @@
+.btn.dropdown-toggle {
+  width: 150px;
+  text-align: left;
+}
+
+span.caret {
+  position: absolute;
+  left: 90%;
+  top: 45%;
+}
+
+.container > label {
+  padding-top: 5px;
+}
+
+.form-label {
+  padding-left: 0px !important;
+}
+
+img {
+  width: 140px;
+  height: 140px;
+}
+table * > img {
+  width: 50px;
+  height: 50px;
+}
+
+.btn-success {
+  background-color: #3b7d4a !important;
+}
+
+.btn-success:hover {
+  background-color: #4daf64 !important;
+}
+
+img.track {
+  border: 1px solid #8a8a8a;
+}
+
+.container.input-container {
+  display: block;
+  box-sizing: border-box;
+  margin-top: 60px;
+}
+
+.container {
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 20px;
+}
+
+body {
+  padding: 20px;
+}
